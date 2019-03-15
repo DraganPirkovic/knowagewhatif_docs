@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-example1</title>
+  <link href="../../deps/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="../../modules.css" rel="stylesheet" type="text/css">
+  
+
+  <script src="../../deps/jquery/dist/jquery.js"></script>
+  <script src="../../deps/angular/angular.js"></script>
+  <script src="../../modules.js"></script>
+  <script src="main.js"></script>
+  
+
+  
+</head>
+<body ng-app="sampleFilterExample">
+  <div ng-controller="MainCtrl as main">
+  <input ng-model="main.input" />
+  {{main.input | sampleFilter}}
+</div>
+</body>
+</html>
